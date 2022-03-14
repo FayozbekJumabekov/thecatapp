@@ -74,7 +74,7 @@ class _SearchPageState extends State<SearchPage> with AutomaticKeepAliveClientMi
                           .toLowerCase()
                           .contains(search.toLowerCase()))
                       .toList());
-                  return PostBreed(breeds: breedList[index]);
+                  return PostBreed(breeds: temp [index]);
                 },
               ),
           )
