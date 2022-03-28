@@ -8,7 +8,6 @@ import 'package:thecatapp/pages/home_page.dart';
 import 'package:thecatapp/pages/profile_page.dart';
 import 'package:thecatapp/pages/search_page.dart';
 import 'package:thecatapp/utils/glow_widget.dart';
-import 'package:thecatapp/utils/utils.dart';
 import '../services/log_service.dart';
 
 class ControlPage extends StatefulWidget {
@@ -81,6 +80,7 @@ class _ControlPageState extends State<ControlPage> {
       onWillPop: onWillPop,
       child: (isOffline)
           ? Container(
+              color: Colors.white,
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
               child: Center(
